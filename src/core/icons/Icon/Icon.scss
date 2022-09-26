@@ -1,0 +1,42 @@
+$c_action: #0062ff;
+$c_opacity_light_focus: rgba(#000, 0.1);
+
+$iconSizes: (
+        'xxs': 4rem,
+        'xs': 5rem,
+        'sm': 6rem,
+        'md': 8rem,
+        'lg': 10rem,
+);
+
+.icon {
+  display: inline-block;
+  line-height: 0;
+  text-align: center;
+  position: relative;
+
+  &_xxs, &_xxs svg {
+    width: map-get($iconSizes, 'xxs');
+    height: map-get($iconSizes, 'xxs');
+  }
+
+  &_xs, &_xs svg {
+    width: map-get($iconSizes, 'xs');
+    height: map-get($iconSizes, 'xs');
+  }
+
+  &_sm, &_sm svg {
+    width: map-get($iconSizes, 'sm');
+    height: map-get($iconSizes, 'sm');
+  }
+
+  &_md, &_md svg {
+    width: map-get($iconSizes, 'md');
+    height: map-get($iconSizes, 'md');
+  }
+
+  &_lg, &_lg svg {
+    width: map-get($iconSizes, 'lg');
+    height: map-get($iconSizes, 'lg');
+  }
+}
