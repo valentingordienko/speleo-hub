@@ -1,0 +1,92 @@
+@import '../styles/colors';
+
+.uic-link {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: end;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  &_read-only, &_disabled {
+    cursor: not-allowed;
+  }
+
+  &_simple {
+    color: $c_cold_grey_90;
+    border-color: $c_cold_grey_5;
+    background-color: $c_cold_grey_5;
+
+    &:hover {
+      color: $c_cold_grey_100;
+      border-color: $c_cold_grey_10;
+      background-color: $c_cold_grey_10;
+    }
+
+    &:disabled {
+      color: $c_cold_grey_50;
+      border-color: $c_cold_grey_30;
+      background-color: $c_cold_grey_30;
+    }
+  }
+
+  &_outline {
+    color: $c_cold_grey_5;
+    border-color: $c_cold_grey_5;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba($c_cold_grey_5, 0.1);
+    }
+
+    &:disabled {
+      color: $c_cold_grey_50;
+      border-color: $c_cold_grey_30;
+      background-color: rgba($c_cold_grey_5, 0.2);
+    }
+  }
+
+  &_transparent {
+    color: $c_cold_grey_5;
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover {
+      border-color: rgba($c_cold_grey_5, 0.1);
+      background-color: rgba($c_cold_grey_5, 0.1);
+    }
+
+    &:disabled {
+      color: $c_cold_grey_50;
+    }
+  }
+
+  &_text {
+    color: $c_cold_grey_5;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+      color: $c_cold_grey_20;
+      text-decoration: underline;
+    }
+
+    &:disabled {
+      color: $c_cold_grey_50;
+    }
+  }
+
+  &__left-icon {
+    margin-right: 1rem;
+  }
+
+  &__right-icon {
+    margin-left: 1rem;
+  }
+}
