@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/UserDeleteOutline.svg';
 
-export function UserDeleteOutline(props: TProps) {
+export function UserDeleteOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="UserDeleteOutline">
       <SVG />

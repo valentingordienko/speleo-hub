@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ListOutline.svg';
 
-export function ListOutline(props: TProps) {
+export function ListOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ListOutline">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ZoomOutSolid.svg';
 
-export function ZoomOutSolid(props: TProps) {
+export function ZoomOutSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="ZoomOutSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/BorderLeftOutline.svg';
 
-export function BorderLeftOutline(props: TProps) {
+export function BorderLeftOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="BorderLeftOutline">
       <SVG />

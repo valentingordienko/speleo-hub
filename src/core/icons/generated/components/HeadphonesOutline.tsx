@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/HeadphonesOutline.svg';
 
-export function HeadphonesOutline(props: TProps) {
+export function HeadphonesOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="HeadphonesOutline">
       <SVG />

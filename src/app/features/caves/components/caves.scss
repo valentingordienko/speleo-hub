@@ -1,0 +1,16 @@
+.caves {
+  display: grid;
+  padding: 0 1rem;
+
+  &__indicator {
+    margin: 1rem 0;
+    justify-self: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 4rem;
+  }
+}

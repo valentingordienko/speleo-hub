@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/FileWordOutline.svg';
 
-export function FileWordOutline(props: TProps) {
+export function FileWordOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="FileWordOutline">
       <SVG />

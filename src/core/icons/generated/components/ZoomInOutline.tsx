@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ZoomInOutline.svg';
 
-export function ZoomInOutline(props: TProps) {
+export function ZoomInOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ZoomInOutline">
       <SVG />

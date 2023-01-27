@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ArrowLongDownOutline.svg';
 
-export function ArrowLongDownOutline(props: TProps) {
+export function ArrowLongDownOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ArrowLongDownOutline">
       <SVG />

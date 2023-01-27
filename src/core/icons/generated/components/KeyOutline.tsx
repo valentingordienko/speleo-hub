@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/KeyOutline.svg';
 
-export function KeyOutline(props: TProps) {
+export function KeyOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="KeyOutline">
       <SVG />

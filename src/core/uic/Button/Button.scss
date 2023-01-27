@@ -2,6 +2,8 @@
 
 .button {
   box-sizing: border-box;
+  display: inline-flex;
+  align-items: end;
   width: max-content;
   padding: 1rem 2rem;
   font-size: 4rem;
@@ -76,5 +78,13 @@
     &:disabled {
       color: $c_cold_grey_50;
     }
+  }
+
+  &__left-icon {
+    margin-right: 1rem;
+  }
+
+  &__right-icon {
+    margin-left: 1rem;
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/HideLeftPanelOutline.svg';
 
-export function HideLeftPanelOutline(props: TProps) {
+export function HideLeftPanelOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="HideLeftPanelOutline">
       <SVG />

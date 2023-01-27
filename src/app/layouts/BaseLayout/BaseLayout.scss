@@ -1,0 +1,36 @@
+@import "src/core/uic/styles/colors";
+
+.base-layout {
+  box-sizing: border-box;
+  display: grid;
+  height: 100%;
+  grid-template-rows: max-content 1fr;
+
+  &__header {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: $c_cold_grey_70;
+  }
+
+  &__body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__menu {
+    box-sizing: border-box;
+    padding: 3rem;
+    border-right: 1px solid $c_cold_grey_70;
+    overflow: auto;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding: 3rem;
+    border-left: 1px solid $c_cold_grey_70;
+    overflow: auto;
+  }
+}

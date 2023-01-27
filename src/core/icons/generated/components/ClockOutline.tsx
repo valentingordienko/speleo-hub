@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ClockOutline.svg';
 
-export function ClockOutline(props: TProps) {
+export function ClockOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ClockOutline">
       <SVG />

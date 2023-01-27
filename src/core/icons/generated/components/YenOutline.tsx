@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/YenOutline.svg';
 
-export function YenOutline(props: TProps) {
+export function YenOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="YenOutline">
       <SVG />

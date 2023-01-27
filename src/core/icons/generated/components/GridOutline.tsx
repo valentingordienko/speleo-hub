@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/GridOutline.svg';
 
-export function GridOutline(props: TProps) {
+export function GridOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="GridOutline">
       <SVG />

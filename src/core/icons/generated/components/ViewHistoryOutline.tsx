@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ViewHistoryOutline.svg';
 
-export function ViewHistoryOutline(props: TProps) {
+export function ViewHistoryOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ViewHistoryOutline">
       <SVG />

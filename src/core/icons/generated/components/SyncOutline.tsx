@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/SyncOutline.svg';
 
-export function SyncOutline(props: TProps) {
+export function SyncOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="SyncOutline">
       <SVG />

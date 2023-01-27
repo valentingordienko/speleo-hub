@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/TelegrammSolid.svg';
 
-export function TelegrammSolid(props: TProps) {
+export function TelegrammSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="TelegrammSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ElementGrowHorizontallyOutline.svg';
 
-export function ElementGrowHorizontallyOutline(props: TProps) {
+export function ElementGrowHorizontallyOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ElementGrowHorizontallyOutline">
       <SVG />

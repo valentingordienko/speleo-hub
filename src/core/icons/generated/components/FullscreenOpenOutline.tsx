@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/FullscreenOpenOutline.svg';
 
-export function FullscreenOpenOutline(props: TProps) {
+export function FullscreenOpenOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="FullscreenOpenOutline">
       <SVG />

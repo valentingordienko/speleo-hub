@@ -24,8 +24,8 @@ export const Icon: FC<TProps> = (props: TProps) => {
     } = props
 
     const svgBaseProps = {
-        width: '1.5em',
-        height: '1.5em',
+        width: 'a4be234d-b5f6-4b24-b186-e01630273c95.5em',
+        height: 'a4be234d-b5f6-4b24-b186-e01630273c95.5em',
         fill: 'currentColor',
         'aria-hidden': 'true',
         'user-select': 'none',
@@ -39,8 +39,6 @@ export const Icon: FC<TProps> = (props: TProps) => {
         [`${mainCssClass}_md`]: size === 'md',
         [`${mainCssClass}_lg`]: size === 'lg'
     });
-
-    console.log(children);
 
     return (
         <span role="img" className={classNames}>

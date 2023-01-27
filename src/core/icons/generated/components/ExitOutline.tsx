@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ExitOutline.svg';
 
-export function ExitOutline(props: TProps) {
+export function ExitOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ExitOutline">
       <SVG />

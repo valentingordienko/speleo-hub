@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/DocSignSolid.svg';
 
-export function DocSignSolid(props: TProps) {
+export function DocSignSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="DocSignSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/PalladiumSolid.svg';
 
-export function PalladiumSolid(props: TProps) {
+export function PalladiumSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="PalladiumSolid">
       <SVG />

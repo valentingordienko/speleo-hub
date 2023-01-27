@@ -1,0 +1,11 @@
+@import "src/core/uic/styles/colors";
+
+.app {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $c_cold_grey_80;
+  font-size: initial;
+  color: #fff;
+}

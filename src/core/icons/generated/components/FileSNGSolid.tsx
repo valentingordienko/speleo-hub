@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/FileSNGSolid.svg';
 
-export function FileSNGSolid(props: TProps) {
+export function FileSNGSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="FileSNGSolid">
       <SVG />

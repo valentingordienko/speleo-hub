@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/AddFromTemplateOutline.svg';
 
-export function AddFromTemplateOutline(props: TProps) {
+export function AddFromTemplateOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="AddFromTemplateOutline">
       <SVG />

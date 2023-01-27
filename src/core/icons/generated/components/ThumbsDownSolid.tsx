@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ThumbsDownSolid.svg';
 
-export function ThumbsDownSolid(props: TProps) {
+export function ThumbsDownSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="ThumbsDownSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/FormatAlignJustifyOutline.svg';
 
-export function FormatAlignJustifyOutline(props: TProps) {
+export function FormatAlignJustifyOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="FormatAlignJustifyOutline">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ArrowCrossOutline.svg';
 
-export function ArrowCrossOutline(props: TProps) {
+export function ArrowCrossOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ArrowCrossOutline">
       <SVG />

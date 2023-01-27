@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ForksSolid.svg';
 
-export function ForksSolid(props: TProps) {
+export function ForksSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="ForksSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/LightningSolid.svg';
 
-export function LightningSolid(props: TProps) {
+export function LightningSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="LightningSolid">
       <SVG />

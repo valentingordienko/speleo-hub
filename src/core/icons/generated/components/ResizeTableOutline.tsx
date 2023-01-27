@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ResizeTableOutline.svg';
 
-export function ResizeTableOutline(props: TProps) {
+export function ResizeTableOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ResizeTableOutline">
       <SVG />

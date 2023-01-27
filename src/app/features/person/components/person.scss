@@ -1,0 +1,19 @@
+.person {
+  &__header {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 4rem;
+  }
+
+  &__info-item {
+    margin-top: 2rem;
+  }
+
+  &__tools {
+    margin-top: 4rem;
+  }
+
+  &__add-contact-button {
+    margin-left: 4rem;
+  }
+}

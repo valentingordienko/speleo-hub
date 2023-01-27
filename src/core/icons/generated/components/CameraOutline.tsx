@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/CameraOutline.svg';
 
-export function CameraOutline(props: TProps) {
+export function CameraOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="CameraOutline">
       <SVG />

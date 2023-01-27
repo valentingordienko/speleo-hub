@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/MailSolid.svg';
 
-export function MailSolid(props: TProps) {
+export function MailSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="MailSolid">
       <SVG />

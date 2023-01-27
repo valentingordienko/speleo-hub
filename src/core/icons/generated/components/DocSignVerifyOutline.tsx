@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/DocSignVerifyOutline.svg';
 
-export function DocSignVerifyOutline(props: TProps) {
+export function DocSignVerifyOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="DocSignVerifyOutline">
       <SVG />

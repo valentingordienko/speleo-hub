@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/VoteOutline.svg';
 
-export function VoteOutline(props: TProps) {
+export function VoteOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="VoteOutline">
       <SVG />

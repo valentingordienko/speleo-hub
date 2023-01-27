@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/BankSolid.svg';
 
-export function BankSolid(props: TProps) {
+export function BankSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="BankSolid">
       <SVG />

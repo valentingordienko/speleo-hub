@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/PullRequestSolid.svg';
 
-export function PullRequestSolid(props: TProps) {
+export function PullRequestSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="PullRequestSolid">
       <SVG />

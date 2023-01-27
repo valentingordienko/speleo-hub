@@ -1,0 +1,27 @@
+.menu {
+  display: grid;
+  box-sizing: border-box;
+  width: max-content;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-top: 2rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__item-button {
+    width: 100%;
+    text-align: left;
+  }
+}

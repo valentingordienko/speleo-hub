@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/CopySolid.svg';
 
-export function CopySolid(props: TProps) {
+export function CopySolid(props: TBaseProps) {
   return (
     <Icon {...props} name="CopySolid">
       <SVG />

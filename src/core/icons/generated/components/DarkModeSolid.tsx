@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/DarkModeSolid.svg';
 
-export function DarkModeSolid(props: TProps) {
+export function DarkModeSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="DarkModeSolid">
       <SVG />

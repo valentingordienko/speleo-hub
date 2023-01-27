@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/PauseSolid.svg';
 
-export function PauseSolid(props: TProps) {
+export function PauseSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="PauseSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/GobackOutline.svg';
 
-export function GobackOutline(props: TProps) {
+export function GobackOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="GobackOutline">
       <SVG />

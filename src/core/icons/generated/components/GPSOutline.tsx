@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/GPSOutline.svg';
 
-export function GPSOutline(props: TProps) {
+export function GPSOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="GPSOutline">
       <SVG />

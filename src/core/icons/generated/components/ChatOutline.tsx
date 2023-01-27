@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/ChatOutline.svg';
 
-export function ChatOutline(props: TProps) {
+export function ChatOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="ChatOutline">
       <SVG />

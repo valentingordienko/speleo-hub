@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/PickupSolid.svg';
 
-export function PickupSolid(props: TProps) {
+export function PickupSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="PickupSolid">
       <SVG />

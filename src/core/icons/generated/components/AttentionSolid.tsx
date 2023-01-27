@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/AttentionSolid.svg';
 
-export function AttentionSolid(props: TProps) {
+export function AttentionSolid(props: TBaseProps) {
   return (
     <Icon {...props} name="AttentionSolid">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/DocViewOutline.svg';
 
-export function DocViewOutline(props: TProps) {
+export function DocViewOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="DocViewOutline">
       <SVG />

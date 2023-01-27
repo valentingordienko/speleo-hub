@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/AlignMiddleOutline.svg';
 
-export function AlignMiddleOutline(props: TProps) {
+export function AlignMiddleOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="AlignMiddleOutline">
       <SVG />

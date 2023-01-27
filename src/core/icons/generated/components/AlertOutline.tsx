@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/AlertOutline.svg';
 
-export function AlertOutline(props: TProps) {
+export function AlertOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="AlertOutline">
       <SVG />

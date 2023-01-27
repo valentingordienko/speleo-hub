@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/RefuseOutline.svg';
 
-export function RefuseOutline(props: TProps) {
+export function RefuseOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="RefuseOutline">
       <SVG />

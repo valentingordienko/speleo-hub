@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/MobileNotificationOutline.svg';
 
-export function MobileNotificationOutline(props: TProps) {
+export function MobileNotificationOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="MobileNotificationOutline">
       <SVG />

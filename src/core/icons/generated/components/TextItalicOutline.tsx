@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/TextItalicOutline.svg';
 
-export function TextItalicOutline(props: TProps) {
+export function TextItalicOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="TextItalicOutline">
       <SVG />

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Icon, TProps } from '../../Icon';
+import { Icon, TBaseProps } from '../../Icon';
 import { ReactComponent as SVG } from '../svg/RotateLeftOutline.svg';
 
-export function RotateLeftOutline(props: TProps) {
+export function RotateLeftOutline(props: TBaseProps) {
   return (
     <Icon {...props} name="RotateLeftOutline">
       <SVG />
