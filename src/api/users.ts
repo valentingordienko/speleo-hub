@@ -1,5 +1,6 @@
+import {resolve} from '../core/utils/fakeApi'
 import {TAlias, TSexCode, TUuid} from '../core/types'
-import { usersData } from './data/users'
+import {usersData} from './data/users'
 import {TCountryCode} from './types/dictionaries'
 
 export type TUser = {
@@ -19,11 +20,7 @@ type TUserId = TUuid
 export type TGetUsersIdsResponseBody = TUserId[]
 
 export async function getUsersIds(): Promise<TGetUsersIdsResponseBody> {
-  return new Promise((resolve)=> {
-    setTimeout(()=> {
-      resolve(usersData.map((({uuid})=> ({uuid}))))
-    }, Math.floor(Math.random() * 10000))
-  })
+  return resolve<TGetUsersIdsResponseBody>(usersData.map((({uuid}) => ({uuid}))))
 }
 
 type TUserPreview = {
@@ -35,35 +32,34 @@ type TUserPreview = {
   city: string
 } & TUuid & TAlias
 
-
 export type TGetUserPreviewResponseBody = TUserPreview | null
+
 export async function getUserPreviewData(uuid: string): Promise<TGetUserPreviewResponseBody> {
-  return new Promise((resolve)=> {
-    const user: TUser | null = usersData.find((item) => item.uuid === uuid) || null
-    let preview: TUserPreview | null = null
-    if (user) {
-      preview = {
-        uuid,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        middleName: user.middleName,
-        photo: user.photo,
-        country: user.country,
-        city: user.city
-      }
+  const user: TUser | null = usersData.find((item) => item.uuid === uuid) || null
+  let responseBody: TUserPreview | null = null
+  if (user) {
+    responseBody = {
+      uuid,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      middleName: user.middleName,
+      photo: user.photo,
+      country: user.country,
+      city: user.city
     }
-    setTimeout(() => {
-      resolve(preview)
-    }, Math.floor(Math.random() * 10000))
-  })
+  }
+  return resolve<TGetUserPreviewResponseBody>(responseBody)
 }
 
 export type TGetUserDataResponseBody = TUser | null
+
 export async function getUserData(id: string): Promise<TGetUserDataResponseBody> {
-  return new Promise((resolve) => {
-    const cave: TUser | null = usersData.find((item) => item.alias === id || item.uuid === id) || null
-    setTimeout(()=> {
-      resolve(cave)
-    }, Math.floor(Math.random() * 10000))
-  })
+  const responseBody: TUser | null = usersData.find((item) => item.alias === id || item.uuid === id) || null
+  return resolve<TGetUserDataResponseBody>(responseBody)
+}
+
+export type TGetCurrentUserIdResponseBody = boolean
+
+export async function getIsUserAuthentication(): Promise<TGetCurrentUserIdResponseBody> {
+  return true
 }
