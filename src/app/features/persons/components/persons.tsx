@@ -88,4 +88,4 @@ export const Persons: FC<TProps> = memo<TProps>(({
     </div>
   )
 })
-Persons.displayName = 'Caves'
+Persons.displayName = 'Persons'

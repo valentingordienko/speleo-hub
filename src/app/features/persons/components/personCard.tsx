@@ -109,4 +109,4 @@ export const PersonCard: FC<TProps> = memo<TProps>(({
     </div>
   )
 })
-PersonCard.displayName = 'CaveCard'
+PersonCard.displayName = 'PersonCard'
