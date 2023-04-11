@@ -26,7 +26,7 @@ export const App: FC = memo(() => {
 
   useUrlListener(handlePathChange)
 
-  useEffect(()=> {
+  useEffect(() => {
     console.log(path)
   }, [path])
 
@@ -36,6 +36,9 @@ export const App: FC = memo(() => {
         <BaseLayout>
           {isAppUrl('/', path) && (
             <p>Главная</p>
+          )}
+          {isAppUrl('/auth', path) && (
+            <p>Вход и регистрация</p>
           )}
           {isAppUrl('/profile', path) && (
             <p>Моя страница</p>

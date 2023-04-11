@@ -1,6 +1,8 @@
 import {isUrl, getUrlParams} from '../../core/utils/url'
 
-export type TAppUrls = '/' |
+export type TAppUrls =
+  '/' |
+  '/auth' |
   '/profile' |
   '/events' |
   '/events/:id' |
@@ -23,5 +25,5 @@ export type TPersonUrlParams = {
   id: string
 }
 
-export const isAppUrl = isUrl<TAppUrls>;
-export const getAppUrlParams = getUrlParams<TAppUrls>;
+export const isAppUrl = isUrl<TAppUrls>
+export const getAppUrlParams = getUrlParams<TAppUrls>
