@@ -1,0 +1,25 @@
+@import "src/core/uic/styles/colors";
+
+.auth {
+  display: flex;
+  justify-content: center;
+
+  &__form {
+    display: inline-grid;
+    box-sizing: border-box;
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: $c_cold_grey_70;
+    grid-row-gap: 4rem;
+  }
+
+  &__fields {
+    display: grid;
+    grid-row-gap: 4rem;
+  }
+
+  &__header, &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

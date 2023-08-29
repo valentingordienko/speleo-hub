@@ -15,7 +15,7 @@ export type TProps = {
   onClick?: TOnClick
 } & TClassName & TDisabled & TReadonly & TMetaData/* & Exclude<HTMLAttributes<HTMLButtonElement>, 'onClick'>*/
 
-const mainCssClass = 'button'
+const mainCssClass = 'uic-button'
 
 export const Button: FC<TProps> = memo<TProps>(({
   className,

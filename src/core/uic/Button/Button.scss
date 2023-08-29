@@ -1,7 +1,6 @@
 @import '../styles/colors';
 
-.button {
-  box-sizing: border-box;
+.uic-button {
   display: inline-flex;
   align-items: end;
   width: max-content;
@@ -32,6 +31,10 @@
       border-color: $c_cold_grey_30;
       background-color: $c_cold_grey_30;
     }
+
+    &:focus-visible {
+      border-color: $c_focus;
+    }
   }
 
   &_outline {
@@ -48,6 +51,10 @@
       border-color: $c_cold_grey_30;
       background-color: rgba($c_cold_grey_5, 0.2);
     }
+
+    &:focus-visible {
+      background-color: $c_yellow_50;
+    }
   }
 
   &_transparent {
@@ -63,6 +70,10 @@
     &:disabled {
       color: $c_cold_grey_50;
     }
+
+    &:focus-visible {
+      color: $c_focus;
+    }
   }
 
   &_text {
@@ -77,6 +88,10 @@
 
     &:disabled {
       color: $c_cold_grey_50;
+    }
+
+    &:focus-visible {
+      color: $c_focus;
     }
   }
 

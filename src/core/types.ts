@@ -15,6 +15,9 @@ export type TProcessing = {
 export type TSize = {
   size?: TSizeCode
 }
+export type TTabIndex = {
+  tabIndex?: number
+}
 export type TOption<T = string> = {
   key: T
   value: string

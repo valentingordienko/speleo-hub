@@ -1,9 +1,25 @@
 import {resolve} from '../core/utils/fakeApi'
-import {menuData} from './data/menu'
+import cookies from '../app/utils/cookies'
+import {
+  menuData,
+  guestMenuOptions,
+  userMenuOptions,
+  TMenuOptions,
+  TAvailableMenuOptionsList
+} from './data/menu'
 
 export type TGetMenuResponseBody = typeof menuData
 
+function getMenuOptions(menuOptions: TMenuOptions, availableOptions: TAvailableMenuOptionsList): TMenuOptions {
+  return menuOptions.filter(({key}) => availableOptions.includes(key)).sort((a, b) => a.priority - b.priority)
+}
+
 export async function getMenu(): Promise<TGetMenuResponseBody> {
-  const responseBody: TGetMenuResponseBody = menuData.filter(({hidden}) => !hidden).sort((a, b) => a.priority - b.priority)
-  return resolve(responseBody, 2000)
+  let responseBody: TGetMenuResponseBody = []
+  if (cookies.get('jwt')) {
+    responseBody = getMenuOptions(menuData, userMenuOptions)
+  } else {
+    responseBody = getMenuOptions(menuData, guestMenuOptions)
+  }
+  return resolve(responseBody, 200)
 }

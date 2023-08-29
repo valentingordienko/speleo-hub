@@ -1,0 +1,23 @@
+@import '../styles/colors';
+
+.uic-input {
+  display: inline-flex;
+  align-items: end;
+  width: max-content;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  border-color: $c_cold_grey_100;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+
+  &:focus-within {
+    border-color: $c_focus;
+  }
+
+  &__input {
+    outline: none;
+  }
+}
