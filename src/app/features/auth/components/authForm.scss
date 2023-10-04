@@ -1,0 +1,14 @@
+.auth-form {
+  display: grid;
+  grid-row-gap: 4rem;
+
+  &__fields {
+    display: grid;
+    grid-row-gap: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

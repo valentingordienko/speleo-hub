@@ -5,8 +5,7 @@
   align-items: end;
   width: max-content;
   padding: 1rem 2rem;
-  font-size: 4rem;
-  border-color: $c_cold_grey_100;
+  border-color: $c_cold_grey_60;
   border-width: 0.25rem;
   border-style: solid;
   border-radius: 1rem;
@@ -19,5 +18,6 @@
 
   &__input {
     outline: none;
+    font-size: 3.3rem;
   }
 }

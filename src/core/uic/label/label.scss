@@ -1,0 +1,12 @@
+.uic-label {
+  display: grid;
+  row-gap: 1rem;
+
+  &__label {
+    font-size: 3.5rem;
+  }
+
+  &__required-sign {
+    margin-left: 1rem;
+  }
+}

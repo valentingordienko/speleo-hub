@@ -1,0 +1,15 @@
+.error {
+  display: grid;
+  justify-items: center;
+  row-gap: 4rem;
+
+  &__code {
+    font-size: 20rem;
+  }
+  &__description {
+    display: grid;
+    row-gap: 2rem;
+    justify-items: center;
+    font-size: 4rem;
+  }
+}

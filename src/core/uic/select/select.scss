@@ -1,0 +1,24 @@
+@import '../styles/colors';
+
+.uic-select {
+  appearance: menulist-button;
+  padding: 1rem 2rem;
+  font-size: 3.3rem;
+  border-color: $c_cold_grey_50;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+
+  &__option {
+    padding: 1rem 2rem;
+    font-size: 3.3rem;
+    border-color: $c_cold_grey_50;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+}

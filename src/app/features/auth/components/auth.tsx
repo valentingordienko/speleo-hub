@@ -1,60 +1,69 @@
-import React, {memo, useMemo, FC, useCallback} from 'react'
+import React, {memo, useState, FC, useCallback} from 'react'
 import {TClassName} from '../../../../core/types'
 import {cssClasses} from '../../../../core/utils/cssClasses'
-import {Tabs, TProps as TTabsProps} from '../../../../core/uic/tabs'
-import {Button} from '../../../../core/uic/Button'
-import {Input} from '../../../../core/uic/input'
+import {Button, TOnClick} from '../../../../core/uic/Button'
+import {AuthForm} from './authForm'
+import {SignForm} from './signForm'
 
 import './auth.scss'
 
 const mainCssClass = 'auth'
 
+type TFormType = 'auth' | 'sign'
+
 export const Auth: FC<TClassName> = memo<TClassName>(({
-  className
+	className
 }) => {
-  const tabs: TTabsProps['items'] = useMemo(()=> {
-    return [
-      {
-        key: 'sign-in',
-        text: 'Вход'
-      },
-      {
-        key: 'sign-out',
-        text: 'Регистрация'
-      }
-    ]
-  }, [])
+	const [formType, setFormType] = useState<TFormType>('auth')
 
-  const handleKey = useCallback(()=> {
+	const handleTabChange: TOnClick = useCallback((event, metaData) => {
+		setFormType(metaData as TFormType)
+	}, [])
 
-  }, [])
+	const handleKey = useCallback(() => {
 
-  const handleClick = useCallback(()=> {
+	}, [])
 
-  }, [])
+	const handleClick = useCallback(() => {
 
-  return (
-    <div className={cssClasses(className, mainCssClass)}>
-      <div className={`${mainCssClass}__form`} onKeyUp={handleKey}>
-        <div className={`${mainCssClass}__header`}>
-          <Tabs
-            className={`${mainCssClass}__tabs`}
-            items={tabs}
-          />
-        </div>
-        <div className={`${mainCssClass}__fields`}>
-          <Input/>
-          <Input/>
-        </div>
-        <div className={`${mainCssClass}__buttons`}>
-          <Button
-            className={`${mainCssClass}__button`}
-            text="Вход / Регистрация"
-            onClick={handleClick}
-          />
-        </div>
-      </div>
-    </div>
-  )
+	}, [])
+
+	const baseTabCssClass = `${mainCssClass}__tab`
+	const passiveTabCssClass = `${baseTabCssClass}_passive`
+
+	return (
+		<div className={cssClasses(className, mainCssClass)}>
+			<div className={`${mainCssClass}__forms`}>
+				<div className={`${mainCssClass}__header`}>
+					<Button
+						className={cssClasses(baseTabCssClass, {[passiveTabCssClass]: formType !== 'auth'})}
+						type="transparent"
+						text="Вход"
+						metaData="auth"
+						onClick={handleTabChange}
+					/>
+					<Button
+						className={cssClasses(baseTabCssClass, {[passiveTabCssClass]: formType !== 'sign'})}
+						type="transparent"
+						text="Регистрация"
+						metaData="sign"
+						onClick={handleTabChange}
+					/>
+				</div>
+				<div className={`${mainCssClass}__content`}>
+					{formType === 'auth' && (
+						<AuthForm
+							className={`${mainCssClass}__form`}
+						/>
+					)}
+					{formType === 'sign' && (
+						<SignForm
+							className={`${mainCssClass}__form`}
+						/>
+					)}
+				</div>
+			</div>
+		</div>
+	)
 })
 Auth.displayName = 'Auth'

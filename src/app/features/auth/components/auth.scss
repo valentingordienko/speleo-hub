@@ -4,22 +4,42 @@
   display: flex;
   justify-content: center;
 
-  &__form {
-    display: inline-grid;
+  &__forms {
+    display: grid;
     box-sizing: border-box;
-    padding: 4rem;
     border-radius: 2rem;
     background-color: $c_cold_grey_70;
     grid-row-gap: 4rem;
+    overflow: hidden;
   }
 
-  &__fields {
+  &__header {
     display: grid;
-    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
   }
 
-  &__header, &__buttons {
-    display: flex;
+  &__tab {
+    width: 100%;
     justify-content: center;
+    border-radius: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &_passive {
+      background-color: rgba($c_cold_grey_5, 0.05);
+    }
+
+    &:first-of-type {
+      border-top-left-radius: 2rem;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 2rem;
+    }
+  }
+
+  &__content {
+    padding: 0 4rem 4rem 4rem;
   }
 }

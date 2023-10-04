@@ -1,5 +1,6 @@
 import React, {FC, memo, PropsWithChildren, useEffect, useState, useCallback} from 'react'
 import cookies from '../../utils/cookies'
+import { Error403 } from '../errors/error403'
 
 export const Private: FC<PropsWithChildren> = memo(({
   children
@@ -21,6 +22,6 @@ export const Private: FC<PropsWithChildren> = memo(({
     }
   }, [])
 
-  return hasSession ? <>{children}</> : <div>403</div>
+  return hasSession ? <>{children}</> : <Error403/>
 })
 Private.displayName = 'Private'

@@ -1,4 +1,4 @@
-import React, {memo, FC, HTMLAttributes, MouseEventHandler, useCallback, MouseEvent} from 'react'
+import React, {memo, FC, HTMLAttributes, MouseEventHandler, useCallback, MouseEvent, ButtonHTMLAttributes} from 'react'
 import {cssClasses} from '../../utils/cssClasses'
 import {TBaseProps as TIconBaseProps} from '../../icons/Icon'
 import {TClassName, TReadonly, TDisabled, TMetaData} from '../../types'
@@ -10,6 +10,7 @@ export type TOnClick = (event: MouseEvent<HTMLButtonElement>, metaData?: TMetaDa
 export type TProps = {
   text: string
   type?: 'simple' | 'outline' | 'transparent' | 'text'
+  htmlType?: ButtonHTMLAttributes<HTMLButtonElement>['type']
   leftIcon?: FC<TIconBaseProps>
   rightIcon?: FC<TIconBaseProps>
   onClick?: TOnClick
@@ -23,13 +24,13 @@ export const Button: FC<TProps> = memo<TProps>(({
   disabled,
   text,
   type = 'simple',
+  htmlType = 'button',
   leftIcon,
   rightIcon,
   onClick,
   metaData,
   ...restProps
 }) => {
-  const buttonClass = `${mainCssClass}__button`
   const classes = cssClasses(className, mainCssClass, {
     [`${mainCssClass}_simple`]: type === 'simple',
     [`${mainCssClass}_outline`]: type === 'outline',
@@ -45,7 +46,7 @@ export const Button: FC<TProps> = memo<TProps>(({
 
   return (
     <button
-      type="button"
+      type={htmlType}
       className={classes}
       disabled={readonly || disabled}
       onClick={handleClick}

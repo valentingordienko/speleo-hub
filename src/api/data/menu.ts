@@ -86,5 +86,11 @@ export const guestMenuOptions: TAvailableMenuOptionsList = [
 export const userMenuOptions: TAvailableMenuOptionsList = [
   'profile',
   'persons',
-  'contacts'
+  'contacts',
+    'caves',
+    "articles",
+    "events",
+    "groups",
+    "messages",
+    "photos"
 ]
